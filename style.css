@@ -1,0 +1,440 @@
+* {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+
+    background-color: rgb(233, 228, 238);
+
+}
+
+nav {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+    background-color: rgb(181 122 193);
+    width: 100%;
+    /* position: fixed;
+   z-index: 2; */
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+}
+
+li a {
+
+    text-decoration: none;
+    margin: 0 20px;
+    color: rgb(237, 231, 236);
+}
+
+li a:hover {
+
+    color: rgb(33, 8, 25);
+
+}
+
+
+.left {
+
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: white;
+}
+
+.left-text {
+
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: "SUSE", sans-serif;
+    font-weight: 45px;
+}
+
+.Home {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 110px 0;
+}
+
+.Home div {
+    /* width: 30%; */
+}
+
+span {
+    color: rgb(181 122 193);
+}
+
+.right-img {
+
+    position: relative;
+}
+
+.coding-img {
+
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    left: 3rem;
+    top: 2rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 30%;
+    z-index: 1;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+
+}
+
+@keyframes example {
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+
+    /* 
+    50% {
+        left: 100px;
+        top: 100px;
+    } */
+
+    100% {
+        top: 0px;
+        left: 0px;
+        transform: rotateZ(360deg);
+    }
+}
+
+.back-img {
+    width: 350px;
+    height: 300px;
+    opacity: 0.5;
+    border-radius: 10%;
+
+}
+
+.btn {
+    background-color: rgb(181 122 193);
+    border: none;
+    color: #f8f1f9;
+    padding: 15px 50px;
+    display: inline;
+    cursor: pointer;
+    margin: 20px 20px;
+    font-size: 17px;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px lightblue
+}
+
+.btn:hover {
+    background-color: purple;
+}
+
+.About-me {
+
+    background-color: #fff;
+    height: auto;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.about {
+    color: black;
+    font-family: "SUSE", sans-serif;
+    margin-left: 15rem;
+    padding: 15px;
+}
+
+.code2 {
+    margin-left: 100px;
+}
+
+.abouttext {
+    height: auto;
+    width: auto;
+    border: 1px solid transparent;
+    padding: 0 10px;
+    letter-spacing: 2px;
+    font-family: "SUSE", sans-serif;
+}
+
+/*icons css*/
+
+.abouticons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.fa-js {
+    font-size: 60px;
+    color: #ffff10;
+    padding: 30px;
+
+}
+
+.fa-react {
+    font-size: 60px;
+    color: rgb(63, 178, 227);
+    padding: 30px;
+}
+
+.fa-terminal {
+    font-size: 60px;
+    font-weight: bold;
+    color: #0f0f0b;
+    padding: 30px;
+}
+
+.fa-node-js {
+    font-size: 60px;
+    color: #1cca50;
+    padding: 30px;
+}
+
+.project {
+    height: 100vh;
+
+}
+
+.work {
+    margin: 20px 90px;
+    font-family: "SUSE", sans-serif;
+}
+
+.project-container {
+    width: auto;
+    height: auto;
+}
+
+.project-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    box-shadow: 0px 3px 3px 0px rgb(33, 8, 25);
+    height: 250px;
+    width: 200px;
+    transition: 0.4s;
+    background-color: azure;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 20px auto;
+
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 05);
+
+}
+
+.card-info {
+    padding: 3px 3px;
+}
+
+/* contact-secation */
+
+.contect-me {
+    height: auto;
+    background-color: #fff;
+    padding: 10px 0;
+
+}
+
+.contact-text {
+
+    padding: 20px;
+    letter-spacing: 5px;
+    font-size: 3rem;
+    font-family: "SUSE", sans-serif;
+    text-align: center;
+}
+
+.container {
+    height: 300px;
+    border-radius: 5px;
+    width: 50%;
+    background-color: #e9e4ee;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+input {
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: none;
+    font-family: "SUSE", sans-serif;
+    letter-spacing: 1px;
+
+}
+
+input[type=submit] {
+    height: 45px;
+    background-color: rgb(181 122 193);
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+input[type=submit]:hover {
+    background-color: violet;
+}
+
+#mesg {
+    padding: 30px 10px;
+    width: 100%;
+    font-family: "SUSE", sans-serif;
+
+}
+
+/* footer section */
+.footer {
+    position: relative;
+    height: auto;
+    background-color: purple;
+    width: 100%;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 41px;
+}
+
+.logo-right {
+    color: white;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+
+}
+
+.links-logo {
+    font-size: 30px;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    margin: 0 3rem;
+    gap: 5px;
+
+}
+
+.link a {
+    color: white;
+    text-decoration: none;
+}
+
+.line {
+    margin: 0 150px;
+    border: 1px solid white;
+}
+
+.icon-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+
+
+}
+
+.icon-copy .fa-brands {
+    font-size: 25px;
+    padding: 10px 25px;
+    border: 1px solid white;
+    border-radius: 30px;
+    /* padding-bottom: 10px; */
+}
+
+.fa-brands:hover {
+    background-color: rgb(181 122 193);
+}
+
+@media screen and (max-width: 750px) {
+    nav {
+        background-color: rgb(181 122 193);
+        width: auto;
+        font-size: 15px;
+        font-family: fantasy;
+    }
+
+    .left-text {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .About-me {
+        width: auto;
+        height: auto;
+        padding-top: 60px;
+    }
+
+    .about-me {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+}
+
+@media screen and (max-width: 550px) {
+    nav {
+        background-color: rgb(181 122 193);
+        width: 24rem;
+        font-size: 9px;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+
+    .Home {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about {
+        margin: 0;
+    }
+
+    .code2 {
+        height: auto;
+        width: 100%;
+        margin: 0;
+    }
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        align-items: normal;
+    }
+
+}
